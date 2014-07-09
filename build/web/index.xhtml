@@ -1,0 +1,45 @@
+
+<html>
+<body>
+<h1>Ahmet Tabanlioglu | Proje1</h1>
+<div>
+<b>Ad Soyad</b> <span id="adsoyad"></span><br />
+<b>Web Sitesi</b> <span id="web"></span><br />
+<b>Mail Adresi</b> <span id="mail"></span><br />
+<b>Linkedin</b> <span id="linkedin"></span><br />
+<b></b> <span id="webbilgisi"></span><br></br>
+<b></b> <span id="desktopbilgisi"></span><br></br>
+<b></b> <span id="veritabanibilgisi"></span>
+</div>
+
+<script>
+if (window.XMLHttpRequest)
+  {// code for IE7+, Firefox, Chrome, Opera, Safari
+  xmlhttp=new XMLHttpRequest();
+  }
+else
+  {// code for IE6, IE5
+  xmlhttp=new ActiveXObject("Microsoft.XMLHTTP");
+  }
+xmlhttp.open("GET","AhmetTabanlioglu.xml",false);
+xmlhttp.send();
+xmlDoc=xmlhttp.responseXML;
+
+document.getElementById("adsoyad").innerHTML=
+xmlDoc.getElementsByTagName("adsoyad")[0].childNodes[0].nodeValue;
+document.getElementById("web").innerHTML=
+xmlDoc.getElementsByTagName("web")[0].childNodes[0].nodeValue;
+document.getElementById("mail").innerHTML=
+xmlDoc.getElementsByTagName("mail")[0].childNodes[0].nodeValue;
+document.getElementById("linkedin").innerHTML=
+xmlDoc.getElementsByTagName("linkedin")[0].childNodes[0].nodeValue;
+document.getElementById("webbilgisi").innerHTML=
+xmlDoc.getElementsByTagName("webbilgisi")[0].childNodes[0].nodeValue;
+document.getElementById("desktopbilgisi").innerHTML=
+xmlDoc.getElementsByTagName("desktopbilgisi")[0].childNodes[0].nodeValue;
+document.getElementById("veritabanibilgisi").innerHTML=
+xmlDoc.getElementsByTagName("veritabanibilgisi")[0].childNodes[0].nodeValue;
+</script>
+
+</body>
+</html>

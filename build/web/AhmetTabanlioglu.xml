@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Edited by XMLSpy -->
+<note>
+        <kisiselbilgiler>
+            <adsoyad>Ahmet Tabanlioglu</adsoyad>
+            <web>www.ahmettabaniloglu.net</web>
+            <mail>atabanlioglu@harran.edu.tr</mail>
+            <linkedin>Linkedin/atabanlioglu</linkedin>
+            </kisiselbilgiler>
+        <teknikbeceriler>
+            <webbilgisi>PHP : İyi</webbilgisi>
+            <desktopbilgisi>C# : İyi</desktopbilgisi>
+            <veritabanibilgisi>SQL : İyi</veritabanibilgisi>
+        </teknikbeceriler>
+</note>
